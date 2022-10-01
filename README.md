@@ -12,3 +12,18 @@ TODO:
   * Användaren skall kunna välja bort vissa kategorier som de inte gillar.
   * Användaren skall kunna välja ungefärlig tidsåtgång på bingot, ca 1 vecka till ca 6 veckor.
     - Appen skall räkna med ca 3h bingotid per dag (för att möjliggöra en full bricka klar om man verkligen vill).
+
+
+Följande kategorier och svårighetsgrader finns än så länge:
+Ute
+Inne
+Åka
+Vatten
+Bygga
+Sport
+Mat
+
+Lätt
+Medium
+Svårt
+Omöjligt
