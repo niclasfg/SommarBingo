@@ -1,6 +1,13 @@
 console.log("Bingo");
 
 
+function NameBingo() {
+    var name = prompt("Vad heter du?")
+    const header = document.querySelector(".header");
+    header.textContent = name.toUpperCase() + "\nSOMMARBINGO\n2023";
+}
+    
+
 
 function bingoText(bingoBox) {   
     var bingoText = `
@@ -11,15 +18,6 @@ function bingoText(bingoBox) {
     `;
     bingoBox.innerHTML = bingoText;
 }
-
-
-function NameBingo() {
-    var name = prompt("Vad heter du?")
-    const header = document.querySelector(".header");
-    header.textContent = name.toUpperCase() + "\nSOMMARBINGO\n2023";
-}
-    
-
 
 const bingoBoxes = document.querySelectorAll(".bingoBox");
 bingoBoxes.forEach((box) => {
