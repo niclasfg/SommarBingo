@@ -27,22 +27,17 @@ function shuffleArray(array) {
 // Fills the 16 bingoboxes with texts
 // TODO generate the divs programmatically.
 function generateBingo(){
+    let bingoIndex = Array.from(Array(bingoCards.length).keys());
+    bingoIndex = shuffleArray(bingoIndex);
+
     const bingoFrame = document.querySelector(".bingoFrame");
     for (let i = 0; i < 16; i++) {
         const box = document.createElement("div");
         box.classList.add("bingoBox");
+        let card = bingoCards[bingoIndex[i]];
+        GenerateBingoText(box, card);
         bingoFrame.appendChild(box);    
     }
-    const bingoBoxes = document.querySelectorAll(".bingoBox");
-    let bingoIndex = Array.from(Array(bingoCards.length).keys());
-    bingoIndex = shuffleArray(bingoIndex);
-    console.log(bingoIndex);
-    let index = 0; 
-    bingoBoxes.forEach((box) => {
-        let card = bingoCards[index];
-        GenerateBingoText(box, card);
-        index++;
-    });
 }
 
 generateBingo();
