@@ -11,17 +11,18 @@ body{
 }
 
 .bingoFrame {
-    color: brown;
+    color: lightskyblue;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .bingoBox {
-    display: block;
+    display: flex;
+    flex-direction: column;
     aspect-ratio: 1 / 1;
     border-radius: 5%;
-    background-color: rgb(236, 236, 223);
+    background-color: lightblue;
     width: 18%;
     margin: 1%;
     padding: 1%;
@@ -29,15 +30,32 @@ body{
 }
 
 .bingoText{
+    flex: 1 1 auto;
     color: black;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.bingoText h1 {
+#cardName{
+    /* flex: 3 3 30%; */
+    /* justify-content: flex-start; */
     text-transform: uppercase;
     font-size: large;
+    margin: 5px;
 }
 
-.bingoText p {
+#cardText{
+    /* flex: 6 6 60%; */
+    /* justify-content: center; */
     font-size: medium;
+    margin: 5px;
+}
+
+#cardDifficulty {
+    /* flex: 1 1 10%; */
+    /* justify-content: flex-end; */
+    font-size: 25px;
+    margin: 5px;
 }
