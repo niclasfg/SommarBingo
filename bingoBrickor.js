@@ -1,3 +1,4 @@
+// List from google sheet and transformed usign https://www.convertcsv.com/csv-to-json.htm.
 const bingoCards =
 [
   {

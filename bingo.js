@@ -1,14 +1,5 @@
-console.log("Bingo");
-
-
-function NameBingo() {
-    var name = prompt("Vad heter du?")
-    const header = document.querySelector(".header");
-    header.textContent = name.toUpperCase() + "\nSOMMARBINGO\n2023";
-}
-
-function GenerateBingoText(bingoBox, index) {   
-    let card = bingoCards[index];
+// Generate a bingoCard from the given card and adds it to the box. 
+function GenerateBingoText(bingoBox, card) {   
     let cardDiff = "";
     switch (card.Difficulty) {
         case "Omöjligt":
@@ -24,6 +15,7 @@ function GenerateBingoText(bingoBox, index) {
     bingoBox.innerHTML = bingoText;
 }
 
+// shuffles an array and returnes a copy with random order.
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -32,12 +24,25 @@ function shuffleArray(array) {
     return array;
 }
 
-const bingoBoxes = document.querySelectorAll(".bingoBox");
-let bingoIndex = Array.from(Array(bingoCards.length).keys());
-bingoIndex = shuffleArray(bingoIndex);
-console.log(bingoIndex);
-let index = 0; 
-bingoBoxes.forEach((box) => {
-    GenerateBingoText(box, bingoIndex[index]);
-    index++;
-});
+// Fills the 16 bingoboxes with texts
+// TODO generate the divs programmatically.
+function generateBingo(){
+    const bingoFrame = document.querySelector(".bingoFrame");
+    for (let i = 0; i < 16; i++) {
+        const box = document.createElement("div");
+        box.classList.add("bingoBox");
+        bingoFrame.appendChild(box);    
+    }
+    const bingoBoxes = document.querySelectorAll(".bingoBox");
+    let bingoIndex = Array.from(Array(bingoCards.length).keys());
+    bingoIndex = shuffleArray(bingoIndex);
+    console.log(bingoIndex);
+    let index = 0; 
+    bingoBoxes.forEach((box) => {
+        let card = bingoCards[index];
+        GenerateBingoText(box, card);
+        index++;
+    });
+}
+
+generateBingo();
