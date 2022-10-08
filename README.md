@@ -3,6 +3,7 @@ Hemsidan som genererar sommarbingon
 
 TODO:
 * Bugg om man ställer in på enbart omöjliga uppgifter, listan har för få sånna, fyll på!
+* Knapp för att skapa en ny ruta om en inte passar.
 * Utskrivt är inte gjort.
 
 Requirements:
