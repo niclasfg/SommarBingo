@@ -26,18 +26,19 @@ function shuffleArray(array) {
 
 // Fills the 16 bingoboxes with texts
 // TODO generate the divs programmatically.
-function generateBingo(){
+function generateBingo(n){
     let bingoIndex = Array.from(Array(bingoCards.length).keys());
     bingoIndex = shuffleArray(bingoIndex);
 
     const bingoFrame = document.querySelector(".bingoFrame");
-    for (let i = 0; i < 16; i++) {
+    for (let i = 0; i < n**2; i++) {
         const box = document.createElement("div");
         box.classList.add("bingoBox");
+        box.setAttribute("style","width:"+String(100/n-4)+"%")
         let card = bingoCards[bingoIndex[i]];
         GenerateBingoText(box, card);
         bingoFrame.appendChild(box);    
     }
 }
 
-generateBingo();
+generateBingo(4);
