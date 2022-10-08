@@ -2,6 +2,10 @@
 Hemsidan som genererar sommarbingon
 
 TODO:
+* Bugg om man ställer in på enbart omöjliga uppgifter, listan har för få sånna, fyll på!
+* Utskrivt är inte gjort.
+
+Requirements:
   * Appen ska ha en intern list över möjliga aktiviteter.
     - Varje aktivitet har "Namn", "Tidsåtgång" och "Svårighetsgrad" och "Kategori"
   * Appen ska generer ett rutmönster (bingo) med aktiviteter, slumpartat men med bivillkor utifrån kategorier.
