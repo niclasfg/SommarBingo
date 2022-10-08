@@ -563,7 +563,7 @@ const bingoCards =
   },
   {
     "Name": "Youtube",
-    "Text": "Gör en YouTube video. ",
+    "Text": "Gör en YouTube video om vad du vill och lägga upp på youtube.",
     "Difficulty": "Omöjligt",
     "Duration": 20,
     "Categories": "Inne"

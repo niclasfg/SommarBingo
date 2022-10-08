@@ -1,13 +1,28 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
+:root {
+    --box-color: lightblue;
+    --box-border: 1px solid rgba(0, 0, 0, 0.2);
+}
 body{
    font-family: 'Open Sans',sans-serif;
 }
 
+.dropdown-menu {
+    min-width: 30rem;
+}
+
+.infoBox{
+    padding: 10px;
+}
 .header {
     text-align: center;
     font-size: xx-large;
     
+}
+
+.frame {
+    aspect-ratio: 29/21;
 }
 
 .bingoFrame {
@@ -22,7 +37,8 @@ body{
     flex-direction: column;
     aspect-ratio: 1 / 1;
     border-radius: 5%;
-    background-color: lightblue;
+    background-color: var(--box-color);
+    border: var(--box-border);
     width: 18%;
     margin: 1%;
     padding: 1%;
@@ -42,14 +58,15 @@ body{
     /* flex: 3 3 30%; */
     /* justify-content: flex-start; */
     text-transform: uppercase;
-    font-size: large;
+    font-weight: bold;
+    font-size: medium;
     margin: 5px;
 }
 
 #cardText{
     /* flex: 6 6 60%; */
     /* justify-content: center; */
-    font-size: medium;
+    font-size: small;
     margin: 5px;
 }
 
