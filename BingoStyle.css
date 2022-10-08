@@ -17,6 +17,10 @@ body{
 }
 
 .dropdown-menu {
+    min-width: fit-content;
+}
+
+#info-dropdown-menu{
     min-width: 30rem;
 }
 
