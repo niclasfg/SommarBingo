@@ -21,13 +21,39 @@
           <a class="nav-link" href="#">Bingo</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Settings</a>
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Inställningar</a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Svårighetsgrad</a>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-default">Namn</span>
+                </div>
+                <input type="text" class="form-control" id="bingoName" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+              </div>
+              
+            <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <div class="input-group-text">
+                    <input type="checkbox" id="oneStarCheck" aria-label="Checkbox for following text input">
+                    <p class="difficulty-setting">⋆</p>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" id="twoStarCheck" aria-label="Checkbox for following text input">
+                    <p class="difficulty-setting">⋆⋆</p>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" id="threeStarCheck" aria-label="Checkbox for following text input">
+                    <p class="difficulty-setting">⋆⋆⋆</p>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" id="fourStarCheck" aria-label="Checkbox for following text input">
+                    <p class="difficulty-setting">⋆⋆⋆⋆</p>
+                </div>
+        </div>
+    </div>
             <a class="dropdown-item" href="#">Kategorier</a>
             <a class="dropdown-item" href="#">Tidsåtgång</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Nytt Bingo</a>
+            <a class="dropdown-item" onclick=updateSettings() >Nytt Bingo</a>
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -39,11 +65,14 @@
                 </p>
             </div>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" onclick=printBingo()>Skriv ut</a>
+          </li>
       </ul>
     <!-- Bingo -->
     <div class="container-fluid">
         <div class="header">
-            <h1>SOMMARBINGO 2023</h1>
+            <h1 id="bingoTitle">SOMMARBINGO 2023</h1>
         </div>
         <div class="bingoFrame">
             <!-- Here there will be bingoBoxes -->

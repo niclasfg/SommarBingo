@@ -8,8 +8,32 @@ body{
    font-family: 'Open Sans',sans-serif;
 }
 
+.nav {
+    background-color: var(--box-color);
+}
+
+.nav-link {
+    color: black;
+}
+
 .dropdown-menu {
     min-width: 30rem;
+}
+
+.input-group{
+    justify-content: center;
+}
+
+.input-group-text {
+    flex-grow: 1;
+    height:fit-content
+}
+
+.difficulty-setting {
+    font-size: xx-large;
+    height: fit-content;
+    padding: 0px;
+    margin: 0px;
 }
 
 .infoBox{

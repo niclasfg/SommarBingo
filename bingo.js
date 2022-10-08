@@ -3,13 +3,17 @@ function GenerateBingoText(bingoBox, card) {
     let cardDiff = "";
     switch (card.Difficulty) {
         case "Omöjligt":
-            cardDiff+="⋆";
+            cardDiff+="⋆⋆⋆⋆";
+            break;
         case "Svårt":
-            cardDiff+="⋆";
+            cardDiff+="⋆⋆⋆";
+            break;
         case "Medium":
-            cardDiff+="⋆";
+            cardDiff+="⋆⋆";
+            break;
         case "Lätt":
             cardDiff+="⋆";
+            break;
     }
     let bingoText = "<div class='bingoText'>\n <h1 id='cardName'>" + card.Name + "</h1>"+"<p id='cardText'>"+ card.Text + "</p>\n <p id='cardDifficulty'>" + cardDiff +"</p>\n </div>";
     bingoBox.innerHTML = bingoText;
@@ -25,7 +29,6 @@ function shuffleArray(array) {
 }
 
 // Fills the 16 bingoboxes with texts
-// TODO generate the divs programmatically.
 function generateBingo(n){
     let bingoIndex = Array.from(Array(bingoCards.length).keys());
     bingoIndex = shuffleArray(bingoIndex);
@@ -41,4 +44,25 @@ function generateBingo(n){
     }
 }
 
-generateBingo(4);
+
+// Saves the bingo as a PDF.
+// TODO implement this
+function printBingo() {
+    console.log("Printer is not implemented yet.")
+}
+
+// Change the titel of the bingo to match the name in the setting.
+function changeBingoName() {
+    let name = document.getElementById("bingoName").value;
+    let title = document.getElementById("bingoTitle");
+    title.textContent = (name + " sommarbingo 2023").toUpperCase();
+    console.log("Name is now " + name);    
+}
+
+function updateSettings() {
+    console.log("Changing settings");
+    generateBingo(4);
+    changeBingoName();
+}
+
+updateSettings();
