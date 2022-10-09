@@ -1,0 +1,27 @@
+@media print
+{
+
+    :root {
+        --box-color: rgb(255, 255, 255);
+        --box-border: 2px solid rgba(0, 0, 0, 1);
+    }
+
+    #pager,
+    form,
+    .no-print
+    {
+        display: none !important;
+        height: 0;
+    }
+
+
+    .no-print, .no-print *{
+        display: none !important;
+        height: 0;
+    }
+
+    .bingoBox {
+        background-color: var(--box-color);
+        border: var(--box-border);
+    }
+}

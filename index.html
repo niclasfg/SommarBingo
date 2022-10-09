@@ -9,14 +9,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
     <!-- BingoStuff -->
-    <link rel="stylesheet" href="BingoStyle.css">
+    <link rel="stylesheet" href="BingoStyle.css" type="text/css">
+    <link rel="stylesheet" href="PrintingStyle.css" media="print" type="text/css">
 
     <title>Bingo</title>
 </head>
 <body>
 
     <!-- Navbar -->
-    <ul class="nav nav-pills">
+    <ul class="nav nav-pills no-print" id="topNavbar">
         <li class="nav-item">
           <a class="nav-link"><b>Sommarbingo-sidan</b></a>
         </li>
@@ -66,11 +67,11 @@
             </div>
         </li>
         <li class="nav-item">
-            <a class="nav-link" onclick=printBingo() href="#">Skriv ut</a>
+            <a class="nav-link" onclick="printBingo()">Skriv ut</a>
           </li>
     </ul>
     <!-- Bingo -->
-    <div class="container-fluid">
+    <div class="container-fluid" id="bingo">
         <div class="header">
             <h1 id="bingoTitle">SOMMARBINGO 2023</h1>
         </div>

@@ -91,7 +91,9 @@ function isCardCorrectDifficulty(card) {
 // TODO implement this
 function printBingo() {
     console.log("Printer is not implemented yet.")
+    print();
 }
+
 
 // Change the titel of the bingo to match the name in the setting.
 function changeBingoName() {
