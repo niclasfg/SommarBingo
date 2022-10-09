@@ -563,7 +563,7 @@ const bingoCards =
   },
   {
     "Name": "Youtube",
-    "Text": "Gör en YouTube video om vad du vill och lägga upp på youtube.",
+    "Text": "Gör en YouTube video. ",
     "Difficulty": "Omöjligt",
     "Duration": 20,
     "Categories": "Inne"
@@ -720,6 +720,370 @@ const bingoCards =
     "Text": "Få alla andra att ordna en överaskningsfest för dig.",
     "Difficulty": "Omöjligt",
     "Duration": 4,
+    "Categories": "Inne"
+  },
+  {
+    "Name": "Laga",
+    "Text": "Laga nånting som är trasigt.",
+    "Difficulty": "Medium",
+    "Duration": 2,
+    "Categories": "Inne"
+  },
+  {
+    "Name": "Nytt språk",
+    "Text": "Lär dig ett nytt språk.",
+    "Difficulty": "Omöjligt",
+    "Duration": 600,
+    "Categories": "Inne"
+  },
+  {
+    "Name": "Gnocchi",
+    "Text": "Gör egen gnocchi och bjud de som vill ha.",
+    "Difficulty": "Svårt",
+    "Duration": 2,
+    "Categories": "Mat"
+  },
+  {
+    "Name": "Radio",
+    "Text": "Bygg en egen radio och lyssna på musik med den.",
+    "Difficulty": "Omöjligt",
+    "Duration": 16,
+    "Categories": "Bygga"
+  },
+  {
+    "Name": "Kostym",
+    "Text": "Sy din egen kostym.",
+    "Difficulty": "Omöjligt",
+    "Duration": 100,
+    "Categories": "Inne"
+  },
+  {
+    "Name": "Drönare",
+    "Text": "Gör din egen drönare och flyg med den.",
+    "Difficulty": "Omöjligt",
+    "Duration": 50,
+    "Categories": "Bygga"
+  },
+  {
+    "Name": "Marathon",
+    "Text": "Spring ett marathon för skojs skull.",
+    "Difficulty": "Omöjligt",
+    "Duration": 12,
+    "Categories": "Sport"
+  },
+  {
+    "Name": "Hemsida ",
+    "Text": "Gör din egen hemsida med HTML, CSS och Javascript.",
+    "Difficulty": "Omöjligt",
+    "Duration": 100,
+    "Categories": "Inne"
+  },
+  {
+    "Name": "Företag",
+    "Text": "Starta ditt eget företag och tjäna 10000 kronor.",
+    "Difficulty": "Omöjligt",
+    "Duration": 100,
+    "Categories": "Inne"
+  },
+  {
+    "Name": "Rida en ko",
+    "Text": "Hitta en ko och rid på den.",
+    "Difficulty": "Svårt",
+    "Duration": 4,
+    "Categories": "Ute"
+  },
+  {
+    "Name": "Matkoll",
+    "Text": "För statistik över allt du äter i en vecka och presentera med grafer.",
+    "Difficulty": "Omöjligt",
+    "Duration": 21,
+    "Categories": "Mat"
+  },
+  {
+    "Name": "Skriv en bok",
+    "Text": "Skriv en hel bok.",
+    "Difficulty": "Omöjligt",
+    "Duration": 200,
+    "Categories": "Inne"
+  },
+  {
+    "Name": "Match",
+    "Text": "Åk och titta på en match av något slag.",
+    "Difficulty": "Svårt",
+    "Duration": 4,
+    "Categories": "Åka"
+  },
+  {
+    "Name": "Färga håret",
+    "Text": "Färga ditt hår i en rolig färg",
+    "Difficulty": "Omöjligt",
+    "Duration": 8,
+    "Categories": "Inne"
+  },
+  {
+    "Name": "Eld",
+    "Text": "Lär dig starta eld utan tändstickor/tändare.",
+    "Difficulty": "Svårt",
+    "Duration": 4,
+    "Categories": "Ute"
+  },
+  {
+    "Name": "Go-kart",
+    "Text": "Åk go-kart.",
+    "Difficulty": "Svårt",
+    "Duration": 4,
+    "Categories": "Åka"
+  },
+  {
+    "Name": "Eget Té",
+    "Text": "Gör eget té av det du hittar i naturen.",
+    "Difficulty": "Medium",
+    "Duration": 3,
+    "Categories": "Mat"
+  },
+  {
+    "Name": "Antikvitet",
+    "Text": "Hitta nånting som är byggt för mer än 300 år sedan.",
+    "Difficulty": "Medium",
+    "Duration": 4,
+    "Categories": "Inne"
+  },
+  {
+    "Name": "Baklängesbok",
+    "Text": "Spela in dig själv när du läser en bok baklänges och lyssa på det efteråt.",
+    "Difficulty": "Lätt",
+    "Duration": 1,
+    "Categories": "Inne"
+  },
+  {
+    "Name": "Halvpromenad",
+    "Text": "Ta en långpromenad med någon som är dubbelt eller hälften så gammal som du.",
+    "Difficulty": "Lätt",
+    "Duration": 2,
+    "Categories": "Ute"
+  },
+  {
+    "Name": "Online-kurs",
+    "Text": "Gå en hel onlinekurs.",
+    "Difficulty": "Svårt",
+    "Duration": 10,
+    "Categories": "Inne"
+  },
+  {
+    "Name": "Anime",
+    "Text": "Titta på en anime (film eller en serie) som du inte har sett förrut.",
+    "Difficulty": "Medium",
+    "Duration": 3,
+    "Categories": "Inne"
+  },
+  {
+    "Name": "Potatisfemma",
+    "Text": "Tillaga potatis på fem olika sett, ha provsmakning.",
+    "Difficulty": "Medium",
+    "Duration": 3,
+    "Categories": "Mat"
+  },
+  {
+    "Name": "Hogwarts",
+    "Text": "Gör en detaljerad modell av Hogwarts som är stor som ett bord.",
+    "Difficulty": "Omöjligt",
+    "Duration": 50,
+    "Categories": "Bygga"
+  },
+  {
+    "Name": "Drömboende",
+    "Text": "Rita planritningar för ditt ultimata hem.",
+    "Difficulty": "Svårt",
+    "Duration": 4,
+    "Categories": "Inne"
+  },
+  {
+    "Name": "Decimaler på π",
+    "Text": "Memorera 100 decimaler på π (eller e om du redan kan π).",
+    "Difficulty": "Omöjligt",
+    "Duration": 12,
+    "Categories": "Inne"
+  },
+  {
+    "Name": "Differentialekvationer",
+    "Text": "Lär dig lösa vanliga differentialekvationer (partiella om du redan kan).",
+    "Difficulty": "Omöjligt",
+    "Duration": 24,
+    "Categories": "Inne"
+  },
+  {
+    "Name": "Fraktaler",
+    "Text": "Gör en tavla med en egen fraktal på.",
+    "Difficulty": "Svårt",
+    "Duration": 8,
+    "Categories": "Inne"
+  },
+  {
+    "Name": "Google Maps",
+    "Text": "Res till ett främmande land i Google Maps och ta selfies med sevärdheter.",
+    "Difficulty": "Svårt",
+    "Duration": 4,
+    "Categories": "Inne"
+  },
+  {
+    "Name": "Spadag",
+    "Text": "Unna dig en riktig fin spa-dag.",
+    "Difficulty": "Svårt",
+    "Duration": 6,
+    "Categories": "Vatten"
+  },
+  {
+    "Name": "Makramé",
+    "Text": "Lär dig göra makramé och gör en present åt någon.",
+    "Difficulty": "Medium",
+    "Duration": 4,
+    "Categories": "Bygga"
+  },
+  {
+    "Name": "Stormkök",
+    "Text": "Laga en lunch på ett stormkök.",
+    "Difficulty": "Lätt",
+    "Duration": 2,
+    "Categories": "Mat"
+  },
+  {
+    "Name": "Fågelholk",
+    "Text": "Bygg en intressant fågelholk.",
+    "Difficulty": "Medium",
+    "Duration": 4,
+    "Categories": "Bygga"
+  },
+  {
+    "Name": "Geocaching",
+    "Text": "Prova på geocaching och hitta en cache.",
+    "Difficulty": "Medium",
+    "Duration": 3,
+    "Categories": "Ute"
+  },
+  {
+    "Name": "Eget papper",
+    "Text": "Gör eget papper och måla något på det.",
+    "Difficulty": "Medium",
+    "Duration": 3,
+    "Categories": "Ute"
+  },
+  {
+    "Name": "Blomsterkrans",
+    "Text": "Gör en blomsterkrans och ha den på huvudet resten av dagen.",
+    "Difficulty": "Lätt",
+    "Duration": 2,
+    "Categories": "Ute"
+  },
+  {
+    "Name": "Koreanska sången",
+    "Text": "Lär dig en sång på koreanska och sjung den för folk.",
+    "Difficulty": "Medium",
+    "Duration": 4,
+    "Categories": "Inne"
+  },
+  {
+    "Name": "Escape Room",
+    "Text": "Gör ett eget Escape Room hemma och utmana andra att klara det.",
+    "Difficulty": "Omöjligt",
+    "Duration": 24,
+    "Categories": "Inne"
+  },
+  {
+    "Name": "Tälja",
+    "Text": "Tälj nånting som du kan använda imorgon.",
+    "Difficulty": "Medium",
+    "Duration": 4,
+    "Categories": "Bygga"
+  },
+  {
+    "Name": "Tårttävling",
+    "Text": "Ha en tårtbakningstävling, låt alla som vill vara jury.",
+    "Difficulty": "Svårt",
+    "Duration": 4,
+    "Categories": "Mat"
+  },
+  {
+    "Name": "Tipspromenad",
+    "Text": "Gör en tipspromenad med frågor om de mänskliga rättigheterna.",
+    "Difficulty": "Lätt",
+    "Duration": 2,
+    "Categories": "Ute"
+  },
+  {
+    "Name": "Grönsakmånader",
+    "Text": "Gör affisch där man ser vilka grönsaker som är i säsong varje månad.",
+    "Difficulty": "Medium",
+    "Duration": 4,
+    "Categories": "Mat"
+  },
+  {
+    "Name": "Naturmålning",
+    "Text": "Måla av nånting fint i naturen.",
+    "Difficulty": "Medium",
+    "Duration": 2,
+    "Categories": "Ute"
+  },
+  {
+    "Name": "Meditera",
+    "Text": "Gå ut och meditera i naturen.",
+    "Difficulty": "Lätt",
+    "Duration": 1,
+    "Categories": "Ute"
+  },
+  {
+    "Name": "Politiker",
+    "Text": "Skriv ett brev till en politiker i din kommun och berätta hur du vill att saker ska vara.",
+    "Difficulty": "Svårt",
+    "Duration": 2,
+    "Categories": "Inne"
+  },
+  {
+    "Name": "Instrument",
+    "Text": "Lär dig spela et tnytt instrument.",
+    "Difficulty": "Omöjligt",
+    "Duration": 100,
+    "Categories": "Inne"
+  },
+  {
+    "Name": "Alla fyra",
+    "Text": "Gå på alla fyra i en timme, som en katt.",
+    "Difficulty": "Medium",
+    "Duration": 1,
+    "Categories": "Ute"
+  },
+  {
+    "Name": "Ensammiddag",
+    "Text": "Gå på restaurang helt själv.",
+    "Difficulty": "Svårt",
+    "Duration": 2,
+    "Categories": "Åka"
+  },
+  {
+    "Name": "Finkläder",
+    "Text": "Ha dina finaste kläder på dig en hel dag, bara för att du kan!",
+    "Difficulty": "Lätt",
+    "Duration": 8,
+    "Categories": "Ute"
+  },
+  {
+    "Name": "Att-läsa-lista",
+    "Text": "Gör en lista på 100 böcker du skulle vilja läsa.",
+    "Difficulty": "Medium",
+    "Duration": 3,
+    "Categories": "Inne"
+  },
+  {
+    "Name": "Kokbok",
+    "Text": "Laga allting i en kokbok.",
+    "Difficulty": "Omöjligt",
+    "Duration": 300,
+    "Categories": "Mat"
+  },
+  {
+    "Name": "Bokklubb",
+    "Text": "Starta en bokklubb där ni träffas och pratar om en bok ni har läst.",
+    "Difficulty": "Svårt",
+    "Duration": 10,
     "Categories": "Inne"
   }
  ]
